@@ -7,7 +7,7 @@ from bson import json_util
 app=Flask(__name__)
 List=[]
 
-cluster = pymongo.MongoClient('mongodb+srv://Sanjana:yes1234@cluster0.vvgoz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
+cluster = pymongo.MongoClient('mongodb+srv://Sanjana:pwd@cluster0.vvgoz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
 db = cluster["data_collector"]
 col = db["data_collection"]
 
